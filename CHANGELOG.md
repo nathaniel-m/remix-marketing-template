@@ -16,9 +16,10 @@
 ### 0.0.2 (November 19, 2024)
 
 * [FEATURE] Added a CTA Section
-* [FEATURE] Added a Product Image Section
+* [FEATURE] Added a Features Section
 * [FEATURE] Added a Hero Section
 * [FEATURE] Added a Nav Bar
+* [FEATURE] Added a Product Image Section
 * [UI] Added a Tailwind Color Theme
 * [UI] Added a Download images for Google, Apple and Shopify
 * [DOC] Updated README

@@ -13,6 +13,12 @@
 
 ## Changes
 
+### 0.0.3 (November 19, 2024)
+
+* [FEATURE] Added a Nav Bar
+* [UI] Added a Tailwind Color Theme
+* [UI] Added a Download images for Google, Apple and Shopify
+
 ### 0.0.2 (November 19, 2024)
 
 * [DOC] Updated README

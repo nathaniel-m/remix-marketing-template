@@ -13,22 +13,14 @@
 
 ## Changes
 
-### 0.0.5 (November 19, 2024)
+### 0.0.2 (November 19, 2024)
 
+* [FEATURE] Added a CTA Section
 * [FEATURE] Added a Product Image Section
-
-### 0.0.4 (November 19, 2024)
-
 * [FEATURE] Added a Hero Section
-
-### 0.0.3 (November 19, 2024)
-
 * [FEATURE] Added a Nav Bar
 * [UI] Added a Tailwind Color Theme
 * [UI] Added a Download images for Google, Apple and Shopify
-
-### 0.0.2 (November 19, 2024)
-
 * [DOC] Updated README
 * [DOC] Created docs/SETUP
 * [DOC] Created .env.example

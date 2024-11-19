@@ -19,6 +19,7 @@
 * [FEATURE] Added a Features Section
 * [FEATURE] Added a Hero Section
 * [FEATURE] Added a Nav Bar
+* [FEATURE] Added a Pricing Section
 * [FEATURE] Added a Product Image Section
 * [UI] Added a Tailwind Color Theme
 * [UI] Added a Download images for Google, Apple and Shopify

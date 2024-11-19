@@ -174,7 +174,7 @@ export default function Index() {
       />
       <Pricing
         plansObj={plansObj}
-        pricingHeading={"Merchant-centric pricing plans tailored to each stage of your SEO journey & needs"}
+        pricingHeading={"Plans tailored to each stage of your SEO journey"}
         pricingDescription={"Find the plan that best meets your specific business needs. All paid plans come with a 7-day free trial."}
       />
     </>

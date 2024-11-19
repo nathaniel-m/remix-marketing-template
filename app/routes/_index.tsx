@@ -13,6 +13,7 @@ import {
 
 import Cta from "../components/cta.jsx"
 import Features from "../components/features.jsx"
+import Footer from "../components/footer.jsx"
 import Hero from "../components/hero/hero.jsx"
 import Navbar from "../components/navbar/navbar.jsx";
 import Pricing from "../components/pricing/pricing.jsx"
@@ -177,6 +178,7 @@ export default function Index() {
         pricingHeading={"Plans tailored to each stage of your SEO journey"}
         pricingDescription={"Find the plan that best meets your specific business needs. All paid plans come with a 7-day free trial."}
       />
+      <Footer />
     </>
   );
 }

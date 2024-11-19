@@ -13,6 +13,10 @@
 
 ## Changes
 
+### 0.0.4 (November 19, 2024)
+
+* [FEATURE] Added a Hero Section
+
 ### 0.0.3 (November 19, 2024)
 
 * [FEATURE] Added a Nav Bar

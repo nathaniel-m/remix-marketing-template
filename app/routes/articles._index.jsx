@@ -5,10 +5,18 @@ export const loader = async () => Response.json(await getArticles());
 
 export default function Index() {
     const articles = useLoaderData();
+    console.log(articles)
 return(
     <>
-    {articles}
-    Hi!
+    <div className="p-10">
+      <ul className="space-y-8">
+        {articles.map((article) => (
+          <li key={article.slug}>
+            {article.slug}
+          </li>
+        ))}
+      </ul>
+    </div>
     </>
 )
 

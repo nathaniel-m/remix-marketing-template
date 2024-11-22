@@ -19,7 +19,7 @@ import DropdownMobile from "./dropdown-mobile.jsx"
 const navigation = [
     { name: 'Features', href: '#', current: true },
     { name: 'Pricing', href: '#', current: false },
-    { name: 'Articles', href: '#', current: false },
+    { name: 'Articles', href: '/articles', current: false },
     { name: "What's New", href: '#', current: false },
 ]
 

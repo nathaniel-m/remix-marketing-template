@@ -13,6 +13,12 @@
 
 ## Changes
 
+### 0.0.3 (November 22, 2024)
+
+* [FEATURE] Added a Articles Index Page
+* [FEATURE] Added a Articles Page
+* [FEATURE] Added Tailwindcss Typography
+
 ### 0.0.2 (November 19, 2024)
 
 * [FEATURE] Added a CTA Section

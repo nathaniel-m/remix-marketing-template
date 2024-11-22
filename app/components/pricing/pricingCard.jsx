@@ -27,7 +27,7 @@ export default function PricingCard({ planObj }) {
         className='text-gray-700 dark:text-gray-300 mt-8 space-y-3 text-sm leading-6 sm:mt-10'
       >
         {planObj.features.map((feature) => (
-          <li className="flex gap-x-3">
+          <li key={feature.id} className="flex gap-x-3">
             <CheckIcon
               aria-hidden="true"
               className='text-600 dark:text-500 h-6 w-5 flex-none'

@@ -1,8 +1,7 @@
-import fs from 'fs/promises';
+import * as change from '../resources/changelog.json'
+
 
 export const getChangeLogs = async () => {
-  const rawFileContent = await fs.readFile('app/resources/changelog.json', { encoding: 'utf-8' });
-  const data = JSON.parse(rawFileContent);
-  const changeLogs = data.changelog ?? [];
+  const changeLogs = change.default.changelog
   return changeLogs;
 };

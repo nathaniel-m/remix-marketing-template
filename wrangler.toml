@@ -1,7 +1,7 @@
 #:schema node_modules/wrangler/config-schema.json
 name = "remix-marketing-template"
 compatibility_date = "2024-11-12"
-compatibility_flags = [ "nodejs_compat" ]
+compatibility_flags = [ "nodejs_compat_v2" ]
 pages_build_output_dir = "./build/client"
 
 # Automatically place your workloads in an optimal location to minimize latency.

@@ -1,0 +1,44 @@
+{
+    "changelog": [
+        {
+            "version": "3.0.0",
+            "headline": "AI-Driven UI Optimization",
+            "image": "AiOptimizationDashboard",
+            "date": "2024-08-19",
+            "content": "Revamped interface based on user feedback, with dynamic layouts adapting to user behavior. Finally, a UI that knows where you want to click before you do. ",
+            "helpdeskUrl": "AiOptimizationDashboard"
+        },
+        {
+            "version": "2.5.1",
+            "headline": "Enhanced Security Protocols ",
+            "image": "",
+            "date": "2024-07-19",
+            "content": "Introduced advanced encryption and anomaly detection algorithms. Now detects unauthorized access attempts faster than a cybersecurity meme goes viral.",
+            "helpdeskUrl": ""
+        },
+        {
+            "version": "2.0.0",
+            "headline": "Multi-Language Support Expansion",
+            "image": "",
+            "date": "2024-06-19",
+            "content": "Expanded AI's language support to 25 new languages, including Klingon (by popular demand). Enhanced cultural context comprehension to avoid awkward translations.",
+            "helpdeskUrl": ""
+        },
+        {
+            "version": "1.2.0",
+            "headline": "Predictive Analytics Integration ",
+            "image": "",
+            "date": "2024-05-19",
+            "content": " Added AI-powered predictions for user trends and personalized recommendations. It's almost like the app knows you better than you know yourself.",
+            "helpdeskUrl": ""
+        },
+        {
+            "version": " 1.0.1",
+            "headline": "Improved Natural Language Understanding",
+            "image": "",
+            "date": "2024-04-19",
+            "content": "Enhanced AI's ability to comprehend complex user queries with higher context awareness and faster response time.",
+            "helpdeskUrl": ""
+        }
+    ]
+}

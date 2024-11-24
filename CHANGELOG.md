@@ -13,6 +13,10 @@
 
 ## Changes
 
+### 0.0.4 (November 23, 2024)
+
+* [FEATURE] Added a Changelog Page
+
 ### 0.0.3 (November 22, 2024)
 
 * [FEATURE] Added a Articles Index Page

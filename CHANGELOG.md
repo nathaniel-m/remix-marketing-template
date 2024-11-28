@@ -13,6 +13,10 @@
 
 ## Changes
 
+### 0.0.5 (November 28, 2024)
+
+* [FEATURE] Added a Helpdesk Page
+
 ### 0.0.4 (November 23, 2024)
 
 * [FEATURE] Added a Changelog Page

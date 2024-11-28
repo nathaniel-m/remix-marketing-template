@@ -12,7 +12,6 @@ export const getArticles = async () => {
         frontmatter: article.frontmatter,
       };
     });
-    //return articles;
     return sortBy(articles, (article) => article.frontmatter.published, "desc");
   };
 

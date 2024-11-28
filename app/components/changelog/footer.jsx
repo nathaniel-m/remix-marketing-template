@@ -13,10 +13,10 @@ export default function Footer() {
 
   return (
     <footer className="mx-auto mt-32 w-full max-w-container px-4 sm:px-6 lg:px-8">
-      <div className="border-t border-gray-900 dark:border-500 py-10">
+      <div className="">
         <div className="mt-16 mb-4 flex items-center justify-center space-x-4 text-lg font-semibold leading-6 text-gray-600">
           <a href="/privacy" className=" hover:text-700">Privacy policy</a>
-          <a href="/docs" className=" hover:text-700">Help Desk</a>
+          <a href="https://fuzeapps.crisp.help/en/category/rerank-ai-bulk-seo-optimizer-1d1zw4h/" className=" hover:text-700">Help Desk</a>
           <a href="/changelog" className=" hover:text-700">Change Log</a>
         </div>
         <div className="flex justify-center mt-4 lg:mt-0 space-x-4">

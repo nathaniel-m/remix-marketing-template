@@ -13,6 +13,12 @@
 
 ## Changes
 
+### 0.0.6 (November 30, 2024)
+
+* [FEATURE] Added a Pricing Page
+* [CHANGE] Features are now set in resources/features.json
+* [CHANGE] Pricing is now set in resources/pricing.json
+
 ### 0.0.5 (November 28, 2024)
 
 * [FEATURE] Added a Helpdesk Page

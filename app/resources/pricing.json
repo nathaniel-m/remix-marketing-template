@@ -1,0 +1,64 @@
+{
+    "pricingHeading":"Plans tailored to each stage of your SEO journey",
+    "pricingDescription":"Find the plan that best meets your specific business needs. All paid plans come with a 7-day free trial.",
+    "plans": [
+        {
+            "name": "SEO Beginner",
+            "price": "",
+            "description": "",
+            "features": [
+                "250 alt tag updates",
+                "Limited email support"
+            ]
+        },
+        {
+            "name": "SEO Pro",
+            "price": "$4.99",
+            "description": "For stores with up to 2,000 products & up to 50 monthly orders",
+            "features": [
+                "Autopilot",
+                "Speed Optimizer",
+                "Meta Tags",
+                "Image SEO Optimizer",
+                "Duplicate Content",
+                "Broken Links",
+                "JSON-LD",
+                "Reports",
+                "Live chat support (on working days)"
+            ]
+        },
+        {
+            "name": "SEO Expert",
+            "price": "$14.99",
+            "description": "For stores with more than 2,000 products or 50+ monthly orders",
+            "features": [
+                "Autopilot",
+                "Speed Optimizer",
+                "Meta Tags",
+                "Image SEO Optimizer",
+                "Duplicate Content",
+                "Broken Links",
+                "JSON-LD",
+                "Reports",
+                "Live chat support (on working days)"
+            ]
+        },
+        {
+            "name": "SEO Supreme",
+            "price": "$24.99",
+            "description": "",
+            "features": [
+                "Autopilot",
+                "AI-assisted content creation (30k tokens available)",
+                "Speed Optimizer",
+                "Meta Tags",
+                "Image SEO Optimizer",
+                "Duplicate Content",
+                "Broken Links",
+                "JSON-LD",
+                "Reports",
+                "Live chat support (on working days)"
+            ]
+        }
+    ]
+}

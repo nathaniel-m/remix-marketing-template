@@ -1,7 +1,6 @@
 import { CheckIcon } from '@heroicons/react/20/solid'
 
 export default function PricingCard({ planObj }) {
-
   return (
     <div
       className='bg-100 dark:bg-gray-800 sm:mx-8 lg:mx-0 lg:rounded-tr-3xl rounded-3xl p-8 ring-1 ring-gray-900/10 sm:p-10 h-full'

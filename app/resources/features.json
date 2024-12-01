@@ -1,0 +1,107 @@
+{
+    "featuresHeading" : "All the features you need to manage all of your customers questions",
+    "plans": [
+        "Beginner",
+        "Pro",
+        "Expert",
+        "Supreme"
+    ],
+    "sections": [
+        {
+            "name": "Financial data",
+            "features": [
+                {
+                    "name": "Open/High/Low/Close",
+                    "description": "The admin panel is designed to provide simple and intuitive management",
+                    "icon": "AdjustmentsVerticalIcon",
+                    "Beginner": true,
+                    "Pro": true,
+                    "Expert": true,
+                    "Supreme": true
+                },
+                {
+                    "name": "Price-volume difference indicator",
+                    "description": "Save time and effort, especially for stores with large inventories.",
+                    "icon": "TagIcon",
+                    "Beginner": true,
+                    "Pro": true,
+                    "Expert": true,
+                    "Supreme": true
+                }
+            ]
+        },
+        {
+            "name": "On-chain data",
+            "features": [
+                {
+                    "name": "Network growth",
+                    "description": "Improve your Shopify store's SEO and user experience",
+                    "icon": "PhotoIcon",
+                    "Beginner": true,
+                    "Pro": false,
+                    "Expert": true,
+                    "Supreme": true
+                },
+                {
+                    "name": "Average token age consumed",
+                    "description": "Google uses broken links as a quality signal, so broken links can hurt your rankings",
+                    "icon": "LinkSlashIcon",
+                    "Beginner": true,
+                    "Pro": false,
+                    "Expert": true,
+                    "Supreme": true
+                },
+                {
+                    "name": "Exchange flow",
+                    "description": "Improve your store's performance, user experience, and search engine rankings.",
+                    "icon": "BoltIcon",
+                    "Beginner": false,
+                    "Pro": false,
+                    "Expert": true,
+                    "Supreme": true
+                },
+                {
+                    "name": "Transaction volume",
+                    "description": "Help your store perform better and provide a better user experience",
+                    "icon": "RocketLaunchIcon",
+                    "Beginner": true,
+                    "Pro": true,
+                    "Expert": true,
+                    "Supreme": true
+                },
+                {
+                    "name": "Total circulation",
+                    "description": "Become more search engine friendly and improve user experience.",
+                    "icon": "CodeBracketIcon",
+                    "Beginner": false,
+                    "Pro": true,
+                    "Expert": true,
+                    "Supreme": true
+                }
+            ]
+        },
+        {
+            "name": "Social data",
+            "features": [
+                {
+                    "name": "Dev activity",
+                    "description": "Duplicate content can confuse search engines and hurt your rankings",
+                    "icon": "DocumentDuplicateIcon",
+                    "Beginner": false,
+                    "Pro": false,
+                    "Expert": false,
+                    "Supreme": true
+                },
+                {
+                    "name": "Relative social dominance",
+                    "description": "Optimizing meta tags on a your store can improve SEO and increase sales",
+                    "icon": "ClockIcon",
+                    "Beginner": true,
+                    "Pro": true,
+                    "Expert": true,
+                    "Supreme": true
+                }
+            ]
+        }
+    ]
+}

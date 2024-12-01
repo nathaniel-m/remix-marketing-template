@@ -5,8 +5,8 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid'
 export default function SidebarNav({ docs, topics }) {
 
     return (
-        <div class="h-full overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500">
-            <nav class="p-3 mt-8 w-full flex flex-col flex-wrap">
+        <div className="h-full overflow-y-auto [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-thumb]:rounded-full [&::-webkit-scrollbar-track]:bg-gray-100 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-gray-700 dark:[&::-webkit-scrollbar-thumb]:bg-gray-500">
+            <nav className="p-3 mt-8 w-full flex flex-col flex-wrap">
                 {topics.topics.map((topic) => (
                     <div className="w-full max-w-lg">
                         <Disclosure as="div" className="py-1 px-2" defaultOpen={false}>

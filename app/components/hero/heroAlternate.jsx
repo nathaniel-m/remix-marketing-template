@@ -1,4 +1,3 @@
-
 export default function HeroAlternate({ heroH1, heroH1_bold, herotext_description, herobutton_url }) {
     return (
         <div className="max-w-[85rem] px-4 sm:px-6 lg:px-8">
@@ -7,7 +6,7 @@ export default function HeroAlternate({ heroH1, heroH1_bold, herotext_descriptio
                     <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white">
                         {heroH1} <br />
                     </h1>
-                    <h1 className="uppercase mb-16 text-4xl font-extrabold md:text-6xl sm:max-w-6xl sm:mx-auto text-center text-500">
+                    <h1 className="uppercase mb-16 text-4xl font-extrabold md:text-6xl sm:max-w-[85rem] sm:mx-auto text-center text-500">
                         {heroH1_bold}
                     </h1>{" "}
                     <p className="mt-8 text-2xl text-gray-800 dark:text-gray-400">

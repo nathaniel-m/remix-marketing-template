@@ -18,6 +18,7 @@ export default function Footer() {
           <a href="/privacy" className=" hover:text-700">Privacy policy</a>
           <a href="/docs" className=" hover:text-700">Help Desk</a>
           <a href="/changelog" className=" hover:text-700">Change Log</a>
+          <a href="/faq" className=" hover:text-700">FAQ's</a>
         </div>
         <div className="flex justify-center mt-4 lg:mt-0 space-x-4">
 

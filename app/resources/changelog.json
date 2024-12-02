@@ -1,4 +1,6 @@
 {
+    "changelogHeading" : "Changelog",
+    "changelogSubheading" : "",
     "changelog": [
         {
             "version": "3.0.0",
@@ -6,7 +8,7 @@
             "image": "AiOptimizationDashboard",
             "date": "2024-08-19",
             "content": "Revamped interface based on user feedback, with dynamic layouts adapting to user behavior. Finally, a UI that knows where you want to click before you do. ",
-            "helpdeskUrl": "AiOptimizationDashboard"
+            "helpdeskUrl": "docs/onboarding/step_1"
         },
         {
             "version": "2.5.1",

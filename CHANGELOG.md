@@ -13,6 +13,12 @@
 
 ## Changes
 
+### 0.0.7 (December 01, 2024)
+
+* [FEATURE] Added a FAQ Page
+* [CHANGE] Section Headings are now uniform and in a component
+* [CHANGE] Page Headings are now uniform and in a component
+
 ### 0.0.6 (November 30, 2024)
 
 * [FEATURE] Added a Pricing Page

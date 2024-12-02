@@ -2,18 +2,14 @@ import { Switch } from '@headlessui/react'
 import { useState } from 'react'
 
 import PricingCard from './pricingCard';
+import SectionHeading from '../sectionHeading.jsx'
 
 export default function PricingSection({ plans, pricingHeading, pricingDescription }) {
   const [enabled, setEnabled] = useState(false)
 
   return (
     <div className="my-8 md:mt-24 md:mb-20 max-w-[85rem] mx-auto px-4 sm:px-6 lg:py-14 lg:px-8 text-base md:text-base text-gray-700 dark:text-gray-300">
-      <h2 className="mt-24 sm:max-w-[85rem] font-black text-6xl text-500 tracking-wide uppercase text-center sm:mx-auto">
-        {pricingHeading}
-      </h2>
-      <p className=" text-gray-900 dark:text-gray-400 tracking-wide sm:text-lg text-4xl md:text-4xl mt-10 md:mt-16 mb-16 sm:max-w-[85rem] text-center sm:mx-auto ">
-        {pricingDescription}
-      </p>
+      <SectionHeading heading={pricingHeading} subheading={pricingDescription} />
       <div className="flex justify-center items-center">
         <label className="min-w-14 text-sm text-gray-600 dark:text-gray-300 me-3">Monthly</label>
         <Switch

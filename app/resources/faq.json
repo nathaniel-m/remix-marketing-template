@@ -1,0 +1,45 @@
+{
+    "faqHeading" : "Answers to All Your Questions",
+    "faqSubheading" : "",
+    "sections": [
+        {
+            "name": "General Questions",
+            "faq": [
+                {
+                    "question": "What am I doing",
+                    "answer" : "Reading the FAQ's"
+                },
+                {
+                    "question": "What is AI",
+                    "answer" : "It' is Artificial Intelligence"
+                },
+                {
+                    "question": "What can I use AI for",
+                    "answer" : "Its Basically only good for writing songs about your pet. Preferrably a dog."
+                }
+            ]
+        },
+        {
+            "name": "Purchase Questions",
+            "faq": [
+                {
+                    "question": "Can I get a refund",
+                    "answer" : "No, you don't want a refund. "
+                }
+            ]
+        },
+        {
+            "name": "Getting Started",
+            "faq": [
+                {
+                    "question": "How do I use AI",
+                    "answer" : "Just ask it something"
+                },
+                {
+                    "question": "Is AI ever wrong",
+                    "answer" : "No, you are not asking the right questions"
+                }
+            ]
+        }
+    ]
+}

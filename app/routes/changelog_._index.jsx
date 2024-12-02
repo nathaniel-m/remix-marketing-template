@@ -3,6 +3,7 @@ import { useLoaderData } from "@remix-run/react";
 import ChangeLogImage from "../components/changelog/changelogImage.jsx";
 import Navbar from "../components/navbar/navbar.jsx";
 import Footer from "../components/footer.jsx"
+import PageHeading from "../components/pageHeading.jsx";
 
 export const loader = async () => Response.json(await getChangeLogs());
 
@@ -14,11 +15,7 @@ export default function Index() {
             <Navbar />
             <div className="">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                    <div className="text-center">
-                        <h2 className="my-10 sm:max-w-4xl font-black text-4xl text-500  tracking-wide uppercase text-center sm:mx-auto">
-                            Changelog
-                        </h2>
-                    </div>
+                <PageHeading heading="Changelog" subheading="" />
                     <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:mt-16 sm:pt-16">
                         {changeLogs.map((changes) => (
                             <div className="flex gap-x-10">

@@ -21,6 +21,7 @@ const navigation = [
     { name: 'Pricing', href: '/pricing', current: false },
     { name: 'Articles', href: '/articles', current: false },
     { name: "What's New", href: '/changelog', current: false },
+    { name: "FAQ's", href: '/faq', current: false },
 ]
 
 const products = [

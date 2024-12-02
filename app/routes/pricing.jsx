@@ -5,6 +5,7 @@ import { useState } from 'react'
 import FeatureTable from '../components/pricing/featureTable.jsx'
 import Footer from "../components/footer";
 import Navbar from "../components/navbar/navbar";
+import PageHeading from "../components/pageHeading.jsx";
 import PricingSection from '../components/pricing/pricingSection.jsx'
 import * as pricing from '../resources/pricing.json'
 import * as features from '../resources/features.json'
@@ -22,15 +23,13 @@ export default function Pricing() {
 
     return (
         <>
-            <div className="">
-                <Navbar />
-                <PricingSection plans={pricingData.plans}
-                    pricingHeading={pricingData.pricingHeading}
-                    pricingDescription={pricingData.pricingDescription} />
-                <FeatureTable featureData={featureData} />
-                <Footer />
-            </div>
-
+            <Navbar />
+            <PageHeading heading={pricingData.pricingHeading} subheading={pricingData.pricingDescription} />
+            <PricingSection plans={pricingData.plans}
+                pricingHeading=""
+                pricingDescription="" />
+            <FeatureTable featureData={featureData} />
+            <Footer />
         </>
     );
 }

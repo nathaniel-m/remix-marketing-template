@@ -38,15 +38,8 @@ export default function Index() {
                                         {faq.question}
                                         <ChevronDownIcon aria-hidden="true" className="size-5 flex-none group-data-[open]:rotate-180" />
                                     </DisclosureButton>
-                                    <DisclosurePanel className="mt-2 space-y-2">
-                                        <DisclosureButton
-                                            key={faq.question}
-                                            as="a"
-                                            href={""}
-                                            className="block rounded-lg py-2 pl-6 pr-3 text-lg font-semibold text-gray-900 dark:text-gray-200 hover:bg-gray-50 dark:hover:bg-gray-700"
-                                        >
-                                            {faq.answer}
-                                        </DisclosureButton>
+                                    <DisclosurePanel className="mt-2 mx-4 text-lg space-y-2 text-gray-900 dark:text-gray-300">
+                                        {faq.answer}
                                     </DisclosurePanel>
                                 </Disclosure>
                             ))}

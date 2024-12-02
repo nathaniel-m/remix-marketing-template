@@ -34,7 +34,7 @@ export default function Index() {
                         <DisclosurePanel className="mt-2 space-y-2">
                             {sections.faq.map((faq) => (
                                 <Disclosure as="div" className="mx-4">
-                                    <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-xl font-semibold text-gray-900 dark:text-gray-200 hover:bg-gray-600">
+                                    <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-xl font-semibold text-gray-900 dark:text-gray-200 hover:bg-100 dark:hover:bg-gray-600">
                                         {faq.question}
                                         <ChevronDownIcon aria-hidden="true" className="size-5 flex-none group-data-[open]:rotate-180" />
                                     </DisclosureButton>

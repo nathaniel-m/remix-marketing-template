@@ -9,7 +9,7 @@ export const getDocs = async () => {
     let slug = build.routes[id].path;
     const splitSlug = slug.split("/")
 
-    const topic = splitSlug[0]
+    const topic = splitSlug[0].replaceAll("-", " ")
     if (slug === undefined) throw new Error(`No route for ${id}`);
     return {
       "topic": topic,

@@ -73,6 +73,7 @@ export default function Navbar() {
                                     <div className="mt-6 flow-root">
                                         <div className="-my-6 divide-y divide-gray-500/10">
                                             <div className="space-y-2 py-6">
+                                            <a className="px-4 py-2 my-4 bg-500 text-white rounded-md hover:bg-600 focus:outline-none focus:ring-2 focus:ring-500 focus:ring-offset-2" href="/docs" aria-label="">Docs Home</a>
                                                 {topics.topics.map((topic) => (
                                                     <DropdownMobile docs={docs} topics={topic} />
                                                 ))}

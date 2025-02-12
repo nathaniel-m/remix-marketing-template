@@ -4,7 +4,7 @@ This is a guide on using this repo.
 
 - Run `npm run install` to install dependencies if you haven't already.
 
-  - Efforts have have been made to ensuring we're using the latest package versions, and some incompatibility issues always pop up while installing. 
+  - Efforts have have been made to ensuring we're using the latest package versions, and some incompatibility issues can pop up while installing. 
 
 - Build your `.env` file based on `.env.example`
 

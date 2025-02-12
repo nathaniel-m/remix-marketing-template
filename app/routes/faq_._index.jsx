@@ -24,7 +24,7 @@ export default function Index() {
         <>
             <Navbar />
             <PageHeading heading={faqData.faqHeading} subheading={faqData.faqSubheading} />
-            <div class="max-w-4xl mx-auto">
+            <div className="max-w-4xl mx-auto">
                 {faqData.sections.map((sections) => (
                     <Disclosure as="div" className="my-8">
                         <DisclosureButton className="group flex w-full items-center justify-between rounded-sm py-2 pl-3 pr-3.5 text-xl font-semibold text-gray-900 dark:bg-gray-900 dark:text-gray-200 hover:bg-100 dark:hover:bg-gray-700">

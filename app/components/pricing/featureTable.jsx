@@ -20,7 +20,7 @@ export default function FeatureTable({ featureData }) {
                         {featureData.sections.map((sections) => (
                             <>
                                 <tr>
-                                    <th className="py-3 ps-6 bg-50 font-bold text-gray-800 text-start dark:bg-gray-800 dark:text-white" colspan="5" scope="colgroup">{sections.name}</th>
+                                    <th className="py-3 ps-6 bg-50 font-bold text-gray-800 text-start dark:bg-gray-800 dark:text-white" colSpan="5" scope="colgroup">{sections.name}</th>
                                 </tr>
                                 {sections.features.map((feature) => (
                                     <tr>

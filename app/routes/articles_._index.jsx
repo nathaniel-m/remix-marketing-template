@@ -1,5 +1,4 @@
 //inspired by https://remix-blog-mdx.fly.dev/
-
 import { getArticles } from "../lib/articles.server.jsx";
 import { useLoaderData } from "@remix-run/react";
 import ArticleImage from "../components/article/articleimage.jsx";
@@ -7,14 +6,24 @@ import Navbar from "../components/navbar/navbar.jsx";
 import Footer from "../components/footer.jsx"
 import PageHeading from "../components/pageHeading.jsx";
 
-export const loader = async () => Response.json(await getArticles());
+import * as app from '../data/app.json'
+
+export const loader = async () => {
+    const articles = await getArticles()
+
+    const appData = app
+
+    return Response.json({ appData: appData, articles: articles });
+};
+
+//export const loader = async () => Response.json(await getArticles());
 
 export default function Index() {
-    const articles = useLoaderData();
+    const { appData, articles  } = useLoaderData();
 
     return (
         <>
-            <Navbar />
+            <Navbar navBarLinks = {appData.navBarLinks} />
             <PageHeading heading="" subheading="" />
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                     <div className="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-2">

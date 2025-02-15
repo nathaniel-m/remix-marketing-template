@@ -4,15 +4,22 @@ import ChangeLogImage from "../components/changelog/changelogImage.jsx";
 import Navbar from "../components/navbar/navbar.jsx";
 import Footer from "../components/footer.jsx"
 import PageHeading from "../components/pageHeading.jsx";
+import * as app from '../data/app.json'
 
-export const loader = async () => Response.json(await getChangeLogs());
+export const loader = async () => {
+    const changeLogs = await getChangeLogs()
+    const appData = app
+
+    return Response.json({ appData: appData, changeLogs: changeLogs });
+};
+
 
 export default function Index() {
-    const changeLogs = useLoaderData();
+    const { appData, changeLogs  } = useLoaderData();
 
     return (
         <>
-            <Navbar />
+            <Navbar navBarLinks = {appData.navBarLinks} />
             <div className="">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <PageHeading heading="Changelog" subheading="" />

@@ -4,25 +4,27 @@ import {
     DisclosurePanel,
 } from '@headlessui/react'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import { json } from "@remix-run/cloudflare";
 import { useLoaderData } from "@remix-run/react";
 import Navbar from "../components/navbar/navbar.jsx";
 import Footer from "../components/footer.jsx"
 import PageHeading from "../components/pageHeading.jsx";
 
-import * as faqs from '../resources/faq.json'
+import * as faqs from '../data/faq.json'
+import * as app from '../data/app.json'
 
 export const loader = async () => {
     const faqData = faqs
-    return json({ faqData: faqData });
+    const appData = app
+
+    return Response.json({ faqData: faqData, appData: appData });
 };
 
 export default function Index() {
-    const { faqData } = useLoaderData();
+    const { faqData, appData  } = useLoaderData();
 
     return (
         <>
-            <Navbar />
+            <Navbar navBarLinks = {appData.navBarLinks} />
             <PageHeading heading={faqData.faqHeading} subheading={faqData.faqSubheading} />
             <div className="max-w-4xl mx-auto">
                 {faqData.sections.map((sections) => (

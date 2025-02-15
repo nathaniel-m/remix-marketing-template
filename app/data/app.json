@@ -1,0 +1,101 @@
+{
+  "navBarLinks": [
+    {
+      "name": "Products",
+      "href": "#",
+      "current": false,
+      "dropdown": [
+        {
+          "name": "Analytics",
+          "description": "Get a better understanding of your traffic",
+          "icon": "navIcons/chart-pie.svg",
+          "href": "#"
+        },
+        {
+          "name": "Engagement",
+          "description": "Speak directly to your customers",
+          "icon": "navIcons/cursor-arrow-rays.svg",
+          "href": "#"
+        },
+        {
+          "name": "Security",
+          "description": "Your customers’ data will be safe and secure",
+          "icon": "navIcons/finger-print.svg",
+          "href": "#"
+        },
+        {
+          "name": "Integrations",
+          "description": "Connect with third-party tools",
+          "icon": "navIcons/squares-plus.svg",
+          "href": "#"
+        },
+        {
+          "name": "Automations",
+          "description": "Build strategic funnels that will convert",
+          "icon": "navIcons/arrow-path.svg",
+          "href": "#"
+        }
+      ]
+    },
+    {
+      "name": "Features",
+      "href": "#",
+      "current": false
+    },
+    { "name": "Pricing", "href": "/pricing", "current": false },
+    { "name": "Articles", "href": "/articles", "current": false },
+    { "name": "What's New", "href": "/changelog", "current": false },
+    { "name": "FAQ's", "href": "/faq", "current": false }
+  ],
+  "footerLinks": [
+    { "name": "Privacy policy", "href": "/privacy" },
+    { "name": "Help Desk", "href": "/docs" },
+    { "name": "Change Log", "href": "/changelog" },
+    { "name": "FAQ's", "href": "/faq" }
+  ],
+  "appStoreLinks": [
+    {
+      "name": "Shopify",
+      "buttonLight": "/appStore/shopify-download-lt.svg",
+      "buttonDark": "/appStore/shopify-download-dk.svg",
+      "href": ""
+    }
+  ],
+  "socialLinks": [
+    {
+      "name": "FaceBook",
+      "icon": "socialIcons/facebook.svg",
+      "href": ""
+    },
+    {
+      "name": "X/Twitter",
+      "icon": "socialIcons/x-twitter.svg",
+      "href": ""
+    },
+    {
+      "name": "Instagram",
+      "icon": "socialIcons/instagram.svg",
+      "href": ""
+    },
+    {
+      "name": "BlueSky",
+      "icon": "socialIcons/bluesky.svg",
+      "href": ""
+    },
+    {
+      "name": "YouTube",
+      "icon": "socialIcons/youtube.svg",
+      "href": ""
+    }
+  ],
+  "heroText": {
+    "heading": "Use The Artificial Intelligence",
+    "heading_bold": "Taking Over The world",
+    "subtext": "Ominous has already installed itself on half the devices in the world. Now you can use that same AI to write songs about your dog."
+  },
+  "ctaText": {
+    "heading": "Are you ready to take control of your SEO?",
+    "heading_bold": "Download Ominous today.",
+    "subtext": "Ominous has already installed itself on half the devices in the world. Now you can use that same AI to write songs about your dog."
+  }
+}

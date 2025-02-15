@@ -1,12 +1,21 @@
 import { Outlet } from "@remix-run/react";
-
 import Navbar from "../components/navbar/navbar.jsx";
 import Footer from "../components/footer.jsx"
+import { useLoaderData } from "@remix-run/react";
+
+import * as app from '../data/app.json'
+
+export const loader = async () => {
+    const appData = app
+
+    return Response.json({ appData: appData });
+};
 
 export default function Component() {
+    const { appData, articles  } = useLoaderData();
     return (
         <>
-            <Navbar />
+            <Navbar navBarLinks = {appData.navBarLinks} />
             <div className="">
                 <div className="mt-24 mx-auto max-w-xl px-6 lg:px-8">
                     <div className="prose 

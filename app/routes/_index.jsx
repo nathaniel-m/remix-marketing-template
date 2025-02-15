@@ -1,4 +1,3 @@
-import { json } from "@remix-run/cloudflare";
 import { useLoaderData } from "@remix-run/react";
 
 import Cta from "../components/cta.jsx"
@@ -8,37 +7,35 @@ import Hero from "../components/hero/hero.jsx"
 import Navbar from "../components/navbar/navbar.jsx";
 import PricingSection from "../components/pricing/pricingSection.jsx"
 import ProductImage from "../components/product-image.jsx"
-import * as features from '../resources/features.json'
-import * as pricing from '../resources/pricing.json'
+import * as features from '../data/features.json'
+import * as pricing from '../data/pricing.json'
+import * as app from '../data/app.json'
 
 export const loader = async () => {
   const pricingData = pricing
   const featureData = features
+  const appData = app
 
-  return json({ pricingData: pricingData, featureData: featureData });
+  return Response.json({ pricingData: pricingData, featureData: featureData, appData: appData });
 };
 
 export default function Index() {
-  const { pricingData, featureData } = useLoaderData();
+  const { pricingData, featureData, appData } = useLoaderData();
 
   return (
     <>
-      <Navbar />
+      <Navbar navBarLinks = {appData.navBarLinks} storeLinks = {appData.appStoreLinks} />
       <Hero
-        heroH1={"Use The Artificial Intelligence"}
-        heroH1_bold={"Taking Over The world"}
-        herotext_description={"Ominous has already installed itself on half the devices in the world. Now you can use that same AI to write songs about your dog."}
-        herobutton_url={""}
+        heroText={appData.heroText}
+        storeLinks = {appData.appStoreLinks}
       />
       <ProductImage
         ImageSrcDk={"/hero-dk.png"}
         ImageSrcLt={"/hero-lt.png"}
-        ImageAlt={"screen shot"}
       />
       <Cta
-        ctabutton_url={""}
-        ctaH2={"Are you ready to take control of your SEO?"}
-        ctaH2_bold={"Download Rerank today."}
+        ctaText={appData.ctaText}
+        storeLinks = {appData.appStoreLinks}
       />
       <Features
         features={featureData}
@@ -46,7 +43,7 @@ export default function Index() {
       <PricingSection plans={pricingData.plans}
         pricingHeading={pricingData.pricingHeading}
         pricingDescription={pricingData.pricingDescription} />
-      <Footer />
+      <Footer footerLinks = {appData.footerLinks} socialLinks = {appData.socialLinks} />
     </>
   );
 }

@@ -1,6 +1,4 @@
 import { useLoaderData } from "@remix-run/react";
-import { json } from "@remix-run/cloudflare";
-
 import { getDocs } from "../lib/docs.server.jsx";
 import Navbar from '../components/changelog/navbar.jsx';
 import Sidebar from '../components/changelog/sidebar.jsx';
@@ -9,7 +7,7 @@ import Footer from "../components/changelog/footer.jsx"
 export const loader = async () => {
     const { docs, topics } = await getDocs()
 
-    return json({ docs: docs, topics: topics });
+    return Response.json({ docs: docs, topics: topics });
 };
 
 export default function Index() {
@@ -24,7 +22,7 @@ export default function Index() {
                     <div className="mx-auto max-w-2xl py-16 lg:max-w-none ">
                         <h2 className="text-2xl font-bold text-gray-900 dark:text-gray-200">Documentation</h2>
                         <p className=" text-gray-900 dark:text-gray-400 tracking-wide sm:text-lg text-xl mb-16 sm:max-w-[85rem] sm:mx-auto ">
-                            This is the documentaion.
+                            Get an overview of features, settings, and how to use them.
                         </p>
                         <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0 ">
                             {topics.topics.map((topic) => (

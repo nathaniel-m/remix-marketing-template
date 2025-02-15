@@ -1,7 +1,5 @@
 import { Outlet } from "@remix-run/react";
 import { useLoaderData } from "@remix-run/react";
-import { json } from "@remix-run/cloudflare";
-
 import Navbar from '../components/changelog/navbar.jsx';
 import Sidebar from '../components/changelog/sidebar.jsx';
 import Footer from "../components/changelog/footer.jsx"
@@ -11,7 +9,7 @@ import { getDocs } from "../lib/docs.server.jsx";
 export const loader = async () => {
     const { docs, topics } = await getDocs()
 
-    return json({ docs: docs, topics: topics });
+    return Response.json({ docs: docs, topics: topics });
 };
 
 export default function Component() {

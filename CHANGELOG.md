@@ -13,6 +13,15 @@
 
 ## Changes
 
+### 0.0.8 (February 14, 2025)
+
+* [FEATURE] Removed the deprecated json import
+* [FEATURE] Added social icons
+* [CHANGE] Revised index to use app.json
+* [CHANGE] Revised components to use app.json
+* [CHANGE] Renamed folder app/resources to app/data
+* [CHANGE] Moved app store button images to public/appStore folder
+
 ### 0.0.7 (December 01, 2024)
 
 * [FEATURE] Added a FAQ Page

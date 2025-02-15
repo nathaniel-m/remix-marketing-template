@@ -1,4 +1,4 @@
-import * as change from '../resources/changelog.json'
+import * as change from '../data/changelog.json'
 
 
 export const getChangeLogs = async () => {

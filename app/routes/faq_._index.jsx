@@ -24,7 +24,7 @@ export default function Index() {
 
     return (
         <>
-            <Navbar navBarLinks = {appData.navBarLinks} />
+            <Navbar navBarLinks = {appData.navBarLinks} storeLinks={appData.appStoreLinks} />
             <PageHeading heading={faqData.faqHeading} subheading={faqData.faqSubheading} />
             <div className="max-w-4xl mx-auto">
                 {faqData.sections.map((sections) => (
@@ -49,7 +49,10 @@ export default function Index() {
                     </Disclosure>
                 ))}
             </div>
-            <Footer />
+             <Footer
+                    footerLinks={appData.footerLinks}
+                    socialLinks={appData.socialLinks}
+                  />
         </>
     )
 }

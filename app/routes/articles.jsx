@@ -15,7 +15,7 @@ export default function Component() {
     const { appData, articles  } = useLoaderData();
     return (
         <>
-            <Navbar navBarLinks = {appData.navBarLinks} />
+            <Navbar navBarLinks = {appData.navBarLinks}  storeLinks = {appData.appStoreLinks} />
             <div className="">
                 <div className="mt-24 mx-auto max-w-xl px-6 lg:px-8">
                     <div className="prose 
@@ -45,8 +45,7 @@ export default function Component() {
                     </div>
                 </div>
             </div>
-
-            <Footer />
+            <Footer  footerLinks = {appData.footerLinks} socialLinks = {appData.socialLinks} />
         </>
     );
 }

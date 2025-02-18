@@ -19,21 +19,21 @@ export default function Index() {
 
     return (
         <>
-            <Navbar navBarLinks = {appData.navBarLinks} />
+            <Navbar navBarLinks = {appData.navBarLinks} storeLinks = {appData.appStoreLinks} />
             <div className="">
                 <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <PageHeading heading="Changelog" subheading="" />
-                    <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:mt-16 sm:pt-16">
+                    <div className="mx-auto max-w-3xl sm:mt-16 sm:pt-16">
                         {changeLogs.map((changes) => (
-                            <div className="flex gap-x-10">
-                                <div className="flex-auto text-nowrap dark:text-gray-200">
+                            <div className="grid grid-cols-3 gap-x-10 gap-y-24">
+                                <div className="flex justify-end text-nowrap dark:text-gray-200">
                                     {changes.date}
                                 </div>
-                                <div className="flex-auto">
-                                    <h3 className="md:text-lg font-semibold text-gray-800 dark:text-gray-200">
+                                <div className="flex-auto col-span-2 justify-start">
+                                    <h3 className="justify-start md:text-lg font-semibold text-gray-800 dark:text-gray-200">
                                         {changes.headline}
                                     </h3>
-                                    <p className="mt-1 mb-10 text-gray-500 dark:text-gray-300">
+                                    <p className="flex-auto mt-1 mb-10 text-gray-500 dark:text-gray-300">
                                         {changes.content}
                                     </p>
                                     {changes.image ? <ChangeLogImage imageName={changes.image} /> : ""}
@@ -44,7 +44,7 @@ export default function Index() {
                     </div>
                 </div>
             </div>
-            <Footer />
+            <Footer  footerLinks = {appData.footerLinks} socialLinks = {appData.socialLinks} />
         </>
     )
 }

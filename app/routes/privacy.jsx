@@ -16,12 +16,15 @@ export default function Privacy() {
 
     return (
         <div className="bg-50 dark:bg-black">
-            <Navbar navBarLinks = {appData.navBarLinks} />
+            <Navbar navBarLinks = {appData.navBarLinks } storeLinks={appData.appStoreLinks}/>
             <PageHeading heading="Privacy Policy" subheading="" />
             <p className="mb-4 text-lg text-center text-gray-500 dark:text-gray-400">
                 Last updated on August 11, 2022
             </p>
-            <Footer />
+            <Footer
+        footerLinks={appData.footerLinks}
+        socialLinks={appData.socialLinks}
+      />
         </div>
     );
 }

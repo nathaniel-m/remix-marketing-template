@@ -13,6 +13,11 @@
 
 ## Changes
 
+### 0.0.9 (February 17, 2025)
+
+* [BUGFIX] Fixed missing components links through out. 
+
+
 ### 0.0.8 (February 14, 2025)
 
 * [FEATURE] Removed the deprecated json import

@@ -24,13 +24,16 @@ export default function Pricing() {
 
     return (
         <>
-            <Navbar navBarLinks = {appData.navBarLinks} />
+            <Navbar navBarLinks = {appData.navBarLinks } storeLinks={appData.appStoreLinks} />
             <PageHeading heading={pricingData.pricingHeading} subheading={pricingData.pricingDescription} />
             <PricingSection plans={pricingData.plans}
                 pricingHeading=""
                 pricingDescription="" />
             <FeatureTable featureData={featureData} />
-            <Footer />
+            <Footer
+        footerLinks={appData.footerLinks}
+        socialLinks={appData.socialLinks}
+      />
         </>
     );
 }

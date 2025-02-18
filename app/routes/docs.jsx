@@ -5,15 +5,17 @@ import Sidebar from '../components/changelog/sidebar.jsx';
 import Footer from "../components/changelog/footer.jsx"
 
 import { getDocs } from "../lib/docs.server.jsx";
+import * as app from "../data/app.json";
 
 export const loader = async () => {
     const { docs, topics } = await getDocs()
+    const appData = app;
 
-    return Response.json({ docs: docs, topics: topics });
+    return Response.json({ docs: docs, topics: topics, appData: appData });
 };
 
 export default function Component() {
-    const { docs, topics } = useLoaderData();
+    const { docs, topics, appData } = useLoaderData();
 
     return (
         <>
@@ -49,7 +51,7 @@ export default function Component() {
                 </div>
             </div>
 
-            <Footer />
+            <Footer footerLinks = {appData.footerLinks} socialLinks = {appData.socialLinks} />
         </>
     );
 }
